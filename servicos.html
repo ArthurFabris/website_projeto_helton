@@ -1,21 +1,281 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Serviços</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nossos Serviços - Dr. Helton Borges</title>
+  <link rel="stylesheet" href="style_servicos.css">  
 </head>
 <body>
-  <h1>Serviços</h1>
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="contact.html">Contato</a>
+
+  <header>
+    <img src="imagens/logo.png" alt="Logo Dr. Helton Borges" class="header-logo">
+    <h1>Nossos Serviços</h1>
+    <p>Cuidado completo para sua saúde bucal e estética do sorriso</p>
+  </header>
+
+  <nav class="breadcrumb">
+    <a href="index.html">Início</a> / Serviços
   </nav>
 
-  <h2 id="maxilares">Tratamentos para Maxilares</h2>
-  <p>Aqui você descreve os serviços relacionados a maxilares...</p>
+<!-- Home Care Section -->
+<section class="why-care-section">
+  <div class="why-care-content">
+    <div class="why-care-text">
+      <h2>Atendimento Odontológico Domiciliar</h2>
+      <p class="why-care-subtitle">CUIDADO PROFISSIONAL NO CONFORTO DA SUA CASA</p>
+      <ul>
+        <li>Atendimento personalizado em sua residência;</li>
+        <li>Ideal para pacientes com dificuldade de locomoção;</li>
+        <li>Conforto e segurança para idosos e pessoas com necessidades especiais;</li>
+        <li>Equipamentos modernos e portáteis;</li>
+        <li>Mesma qualidade do consultório, na comodidade do seu lar.</li>
+      </ul>
+      <div class="why-care-highlight">
+        <p>Levamos toda a estrutura necessária até você! Nossa equipe está preparada para oferecer tratamentos odontológicos completos sem que você precise sair de casa.</p>
+      </div>
+    </div>
+    <div class="why-care-image">
+      <img src="imagens/Atendimento domiciliar.jpg" alt="Atendimento Domiciliar">
+    </div>
+  </div>
+</section>
 
-  <h2 id="dentes">Tratamentos para Dentes</h2>
-  <p>Descrição de tratamentos dentários...</p>
+  <!-- Benefits Section -->
+  <section class="benefits-section">
+    <div class="benefits-content">
+      <div class="benefits-image">
+        <img src="imagens/helton_2.png" alt="Benefícios do Sorriso">
+      </div>
+      <div class="benefits-text">
+        <h2>Os BENEFÍCIOS de corrigir os dentes</h2>
+        <p class="benefits-subtitle">Ter um sorriso bonito e cativante é motivo de autoestima elevada. Contribui para rejuvenescer e encantar as pessoas.</p>
+        <ul>
+          <li>Aumento da autoconfiança, melhorando as relações pessoais e profissionais;</li>
+          <li>Promover a saúde dos dentes, gengivas, ossos e articulação mandibular;</li>
+          <li>Melhorar a mastigação e digestão dos alimentos;</li>
+          <li>Facilitar a higienização e prevenção de doenças;</li>
+          <li>Proporcionar bem-estar e qualidade de vida;</li>
+          <li>Rejuvenescer a aparência facial.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-</body>
-</html>
+  <!-- DSD Section -->
+  <section class="dsd-section">
+    <div class="dsd-content">
+      <h2>Diagnóstico Digital do Sorriso (DSD)</h2>
+      <p>Utilizamos tecnologia de ponta para planejar seu sorriso ideal. Com o Digital Smile Design, você visualiza o resultado final antes mesmo de começar o tratamento, garantindo previsibilidade e segurança em cada procedimento.</p>
+      
+      <div class="dsd-features">
+        <div class="dsd-feature">
+          <h3>✓ Visualização 3D</h3>
+          <p>Veja seu novo sorriso antes de iniciar</p>
+        </div>
+        <div class="dsd-feature">
+          <h3>✓ Planejamento Preciso</h3>
+          <p>Cada detalhe é calculado digitalmente</p>
+        </div>
+        <div class="dsd-feature">
+          <h3>✓ Resultados Previsíveis</h3>
+          <p>Tecnologia que garante o resultado esperado</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <div class="container">
+    <div class="services-title">
+      <h2>Conheça Nossos Tratamentos</h2>
+      <p>Soluções completas para todas as suas necessidades odontológicas</p>
+    </div>
+
+    <div class="services-grid">
+      <!-- Serviço 1: DSD -->
+      <div class="service-card" id="dsd-section">
+        <div class="service-image-wrapper">
+          <img src="imagens/dsd.jpg" alt="Diagnóstico Digital do Sorriso" class="service-image">
+        </div>
+        <div class="service-content">
+          <h3>Diagnóstico Clínico Digital do Sorriso</h3>
+          <p>Planejamento digital avançado com tecnologia de ponta para avaliar e simular resultados estéticos do seu sorriso.</p>
+          <ul>
+            <li>Visualização prévia do resultado do tratamento</li>
+            <li>Planejamento preciso e personalizado</li>
+            <li>Maior previsibilidade dos resultados</li>
+            <li>Comunicação clara entre dentista e paciente</li>
+            <li>Redução do tempo de tratamento</li>
+          </ul>
+          <a href="#" class="service-btn" onclick="openModal('dsd')">Saiba Mais</a>
+        </div>
+      </div>
+
+      <!-- Serviço 2: Reabilitação -->
+      <div class="service-card" id="reabilitacao">
+        <div class="service-image-wrapper">
+          <img src="imagens/reparacao.jpeg" alt="Reabilitação Oral" class="service-image">
+        </div>
+        <div class="service-content">
+          <h3>Reabilitação Oral</h3>
+          <p>Tratamentos completos para restaurar função mastigatória, estética bucal e qualidade de vida.</p>
+          <ul>
+            <li>Implantes dentários de última geração</li>
+            <li>Próteses fixas e removíveis personalizadas</li>
+            <li>Coroas e pontes estéticas</li>
+            <li>Restaurações com materiais de alta qualidade</li>
+            <li>Recuperação da autoestima e bem-estar</li>
+          </ul>
+          <a href="#" class="service-btn" onclick="openModal('reabilitacao')">Saiba Mais</a>
+        </div>
+      </div>
+
+      <!-- Serviço 3: Gengiva -->
+      <div class="service-card" id="gengiva">
+        <div class="service-image-wrapper">
+          <img src="imagens/gengiva.jpg" alt="Tratamento da Gengiva" class="service-image">
+        </div>
+        <div class="service-content">
+          <h3>Tratamento da Gengiva (Gengivites e Periodontites)</h3>
+          <p>Cuidado especializado para saúde gengival, prevenindo perdas ósseas e mantendo seus dentes saudáveis.</p>
+          <ul>
+            <li>Prevenção e tratamento de gengivites</li>
+            <li>Combate à periodontite e perda óssea</li>
+            <li>Eliminação de sangramento gengival</li>
+            <li>Tratamento de mau hálito persistente</li>
+            <li>Técnicas modernas e minimamente invasivas</li>
+          </ul>
+          <a href="#" class="service-btn" onclick="openModal('gengiva')">Saiba Mais</a>
+        </div>
+      </div>
+
+      <!-- Serviço 4: Próteses -->
+      <div class="service-card" id="proteses">
+        <div class="service-image-wrapper">
+          <img src="imagens/protese.webp" alt="Próteses" class="service-image">
+        </div>
+        <div class="service-content">
+          <h3>Próteses: Convencionais e Sobre Implantes</h3>
+          <p>Desde próteses tradicionais até próteses sobre implantes, restaurando função e estética com naturalidade.</p>
+          <ul>
+            <li>Próteses totais e parciais removíveis</li>
+            <li>Próteses fixas sobre implantes (protocolo)</li>
+            <li>Materiais de última geração para naturalidade</li>
+            <li>Conforto e segurança na mastigação</li>
+            <li>Durabilidade e resultados estéticos impressionantes</li>
+          </ul>
+          <a href="#" class="service-btn" onclick="openModal('proteses')">Saiba Mais</a>
+        </div>
+      </div>
+
+      <!-- Serviço 5: Infantil -->
+      <div class="service-card" id="infantil">
+        <div class="service-image-wrapper">
+          <img src="imagens/crianca.jpg" alt="Atendimento Infantil" class="service-image">
+        </div>
+        <div class="service-content">
+          <h3>Atendimento Infantil</h3>
+          <p>Odontologia especializada para crianças, com carinho, paciência e cuidado desde os primeiros dentes.</p>
+          <ul>
+            <li>Primeira consulta odontológica acolhedora</li>
+            <li>Prevenção e orientação de higiene bucal</li>
+            <li>Aplicação de flúor e selantes</li>
+            <li>Tratamento de cáries sem traumas</li>
+            <li>Criação de experiências positivas</li>
+          </ul>
+          <a href="#" class="service-btn" onclick="openModal('infantil')">Saiba Mais</a>
+        </div>
+      </div>
+
+      <!-- Serviço 6: Endodontia -->
+      <div class="service-card" id="endodontia">
+        <div class="service-image-wrapper">
+          <img src="imagens/canal.jpg" alt="Tratamento de Canal" class="service-image">
+        </div>
+        <div class="service-content">
+          <h3>Tratamento Endodôntico (Canal)</h3>
+          <p>Procedimentos modernos e indolores para tratar canais, aliviar dor e salvar seus dentes naturais.</p>
+          <ul>
+            <li>Microscopia operatória para maior precisão</li>
+            <li>Instrumentos rotatórios de última geração</li>
+            <li>Tratamento rápido e confortável</li>
+            <li>Anestesia eficaz sem dor</li>
+            <li>Preservação do dente natural</li>
+          </ul>
+          <a href="#" class="service-btn" onclick="openModal('endodontia')">Saiba Mais</a>
+        </div>
+      </div>
+
+      <!-- Serviço 7: Lentes -->
+      <div class="service-card" id="lentes">
+        <div class="service-image-wrapper">
+          <img src="imagens/lentes.jpg" alt="Lentes de Porcelana" class="service-image">
+        </div>
+        <div class="service-content">
+          <h3>Lentes de Porcelana ou de Resina</h3>
+          <p>Facetas ultrafinas para corrigir imperfeições, proporcionando harmonia estética e o sorriso perfeito.</p>
+          <ul>
+            <li>Correção de manchas e descolorações</li>
+            <li>Alinhamento e uniformização dos dentes</li>
+            <li>Procedimento minimamente invasivo</li>
+            <li>Resultados naturais e duradouros</li>
+            <li>Transformação imediata do sorriso</li>
+          </ul>
+          <a href="#" class="service-btn" onclick="openModal('lentes')">Saiba Mais</a>
+        </div>
+      </div>
+
+      <!-- Serviço 8: Ortodontia -->
+      <div class="service-card" id="ortodontia">
+        <div class="service-image-wrapper">
+          <img src="imagens/invisalign.jpg" alt="Ortodontia Invisível" class="service-image">
+        </div>
+        <div class="service-content">
+          <h3>Tratamento Ortodôntico com Aparelhos Invisíveis</h3>
+          <p>Correção dentária com alinhadores discretos, removíveis, confortáveis e praticamente invisíveis.</p>
+          <ul>
+            <li>Alinhadores transparentes e discretos</li>
+            <li>Removíveis para comer e higienizar</li>
+            <li>Conforto sem fios ou bráquetes</li>
+            <li>Planejamento digital 3D do tratamento</li>
+            <li>Resultados previsíveis e eficazes</li>
+          </ul>
+          <a href="#" class="service-btn" onclick="openModal('ortodontia')">Saiba Mais</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="main-footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="imagens/logo.png" alt="Logo Dr. Helton">
+        <h3>DR. HELTON BORGES</h3>
+        <p>Odontologia</p>
+      </div>
+  
+      <div class="footer-section">
+        <h4>Meu Endereço</h4>
+        <p class="footer-subtitle">FAÇA UMA VISITA</p>
+        <p>Avenida Hans Schmoger, 543<br>
+           Sala 01, Bairro Conceição<br>
+           Linhares/ES</p>
+      </div>
+      <div class="footer-section">
+        <h4>Contato</h4>
+        <p class="footer-subtitle">FALE CONOSCO</p>
+        <p>📱 / 💬 <a href="https://wa.me/5527997646033" target="_blank">(27) 99764-6033</a></p>
+        <p class="footer-subtitle">E-MAIL</p>
+        <p><a href="mailto:drheltonborges@email.com">drheltonborges@email.com</a></p>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>© 2025 Dr. Helton Borges | Todos os direitos reservados.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/drheltonborges" target="_blank">📷</a>
+        <a href="https://www.facebook.com/drheltonborges" target="_blank">f</a>
+      </div>
+    </div>
+  </footer>

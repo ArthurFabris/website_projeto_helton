@@ -1,19 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header Responsivo co\m Shrink</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to My Website</h1>
-  <nav>
-    <a href="contact.html">Contact</a> |
-    <a href="servicos.html">Servicos</a>
-    <a href="servicos.html#maxilares">Ver tratamentos de Maxilares</a>
-    <a href="servicos.html#dentes">Ver tratamentos de Dentes</a>
+  <header id="main-header">
+    <img src="imagens/logo.png" alt="Logo">
+    <nav id="nav-menu">
+      <a href="#">Início</a>
+      <a href="servicos.html">Tratamentos</a>
+      <a href="#location-section">Contato</a>
+      <a href="https://wa.me/5527997646033" target="_blank" class="btn">Agendamento</a>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
 
+  <main>
+    
+    <section id="welcome-section">
+      <div id="welcome-content">
+        <img src="imagens/HELTON_PRINCIPAL.png" alt="Dr. Helton" class="person">
+        <div class="text-logo-group">
+          <img src="imagens/logo_dourado.png" class="logo">
+          <h2>Conheça nossos serviços, no consultorio ou em casa!</h2>
+        </div>
+      </div>
+  </section>
+  
+    <section id="welcome-footer">
+      <h3>Como podemos ajudar?</h3>
+      <a href="https://wa.me/5527997646033" target="_blank" class="schedule-link">Agende uma consulta</a>
+      <div class="contact-info">
+        <span class="phone-icon">☎</span>
+        <p>Agende via Telefone: <strong><a href="tel:+5527997646033">(27) 99764-6033</a></strong></p>
+      </div>
+      <p class="footer-subtitle">Dentista em <strong>Linhares - ES</strong>. Clínica Odontológica | Atendimento em Casa</p>
+    </section>
+    
 
-  </nav>
-  <p>This is the home page.</p>
+    <section id="servicos">
+      <a href="servicos.html#dsd-section" class="servico" style="background-image: url('imagens/dsd.jpg');">
+        <div class="overlay"><h3>Diagnóstico Clínico Digital do Sorriso</h3></div>
+      </a>
+    
+      <a href="servicos.html#reabilitacao" class="servico" style="background-image: url('imagens/reparacao.jpeg');">
+        <div class="overlay"><h3>Reabilitação Oral</h3></div>
+      </a>
+    
+      <a href="servicos.html#gengiva" class="servico" style="background-image: url('imagens/gengiva.jpg');">
+        <div class="overlay"><h3>Tratamento da Gengiva (Gengivites e Periodontites)</h3></div>
+      </a>
+    
+      <a href="servicos.html#proteses" class="servico" style="background-image: url('imagens/protese.webp');">
+        <div class="overlay"><h3>Próteses: Convencionais e Sobre Implantes</h3></div>
+      </a>
+    
+      <a href="servicos.html#infantil" class="servico" style="background-image: url('imagens/crianca.jpg');">
+        <div class="overlay"><h3>Atendimento Infantil</h3></div>
+      </a>
+    
+      <a href="servicos.html#endodontia" class="servico" style="background-image: url('imagens/canal.jpg');">
+        <div class="overlay"><h3>Tratamento Endodôntico (Canal)</h3></div>
+      </a>
+    
+      <a href="servicos.html#lentes" class="servico" style="background-image: url('imagens/lentes.jpg');">
+        <div class="overlay"><h3>Lentes de Porcelana ou de Resina</h3></div>
+      </a>
+    
+      <a href="servicos.html#ortodontia" class="servico" style="background-image: url('imagens/invisalign.jpg');">
+        <div class="overlay"><h3>Tratamento Ortodôntico com Aparelhos Invisíveis</h3></div>
+      </a>
+    </section>
+    
+
+<section id="home-service">
+  <img src="imagens/logo.png" alt="Ícone da clínica" class="home-service-icon">
+  <div class="home-service-text">
+    <h2>Levamos o cuidado até você</h2>
+    <p>Agora também oferecemos atendimento odontológico no conforto da sua casa, 
+       com a mesma qualidade e tecnologia da clínica. Priorizamos seu bem-estar 
+       e praticidade, garantindo um sorriso saudável sem precisar sair de casa.</p>
+  </div>
+</section>
+
+<section id="experience-section">
+  <img src="imagens/logo.png" alt="Ícone da clínica" class="experience-icon">
+  <div class="experience-text">
+    <h2>Mais de 20 anos de experiência transformando sorrisos</h2>
+    <p>
+      Nossa equipe é formada por profissionais altamente qualificados e apaixonados pela odontologia,
+      oferecendo todos os tipos de tratamentos – desde limpezas e restaurações, até implantes, próteses,
+      ortodontia invisível, estética dental e atendimentos infantis.
+    </p>
+    <p>
+      Com tecnologia moderna e atendimento humanizado, garantimos resultados previsíveis e o máximo
+      conforto em cada etapa do seu tratamento. Experiência, dedicação e excelência reunidas para
+      o seu melhor sorriso.
+    </p>
+  </div>
+</section>
+
+<section id="doctor-helton">
+  <div class="doctor-container">
+    <img src="imagens/helton_2.png" alt="Dr. Helton Borges" class="doctor-photo">
+    <h2>Dr. Helton Borges</h2>
+    <p class="doctor-role">CIRURGIÃO DENTISTA / CRO 0000 ES</p>
+    <p class="doctor-specialty">
+      Especialista em Implantodontia – Próteses e Reabilitação Oral Avançada
+    </p>
+    <p class="doctor-description">
+      Atuando há <strong>mais de 20 anos</strong> com excelência e dedicação, o Dr. Helton Borges
+      oferece tratamentos personalizados para cada paciente, abrangendo desde
+      reabilitações completas, implantes, estética dental, até ortodontia invisível
+      e atendimentos infantis.
+    </p>
+    <p class="doctor-social">
+      <a href="https://www.instagram.com/drheltonborges" target="_blank">@drheltonborges</a>
+    </p>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="testimonials-container">
+    <button class="testimonial-nav prev" id="prev-testimonial">‹</button>
+    
+    <div class="testimonial-content">
+      <p class="testimonial-text" id="testimonial-text">
+        "Excelente atendimento e resultado incrível!"
+      </p>
+      <h4 class="testimonial-name" id="testimonial-name">Maria Silva</h4>
+    </div>
+
+    <button class="testimonial-nav next" id="next-testimonial">›</button>
+  </div>
+</section>
+
+<section id="location-section">
+  <div class="location-container">
+    <div class="location-info">
+      <h2>Nos encontre</h2>
+      <p><strong>Endereço:</strong> Avenida Hans Schmoger, 543, Sala 01, Bairro Conceição, Linhares-ES</p>
+      <p><strong>Telefone:</strong> <a href="tel:+5527997646033">(27) 99764-6033</a></p>
+      <a href="https://maps.google.com/?q=Avenida+Hans+Schmoger,+543,+Sala+01,+Bairro+Conceição,+Linhares-ES" target="_blank" class="map-btn">Ver no Google Maps</a>
+    </div>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.8!2d-40.0715!3d-19.4067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDI0JzI0LjEiUyA0MMKwMDQnMTcuNCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+<footer id="main-footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="imagens/logo.png" alt="Logo Dr. Helton">
+      <h3>DR. HELTON BORGES</h3>
+      <p>Odontologia</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Meu Endereço</h4>
+      <p class="footer-subtitle">FAÇA UMA VISITA</p>
+      <p>Avenida Hans Schmoger, 543<br>
+         Sala 01, Bairro Conceição<br>
+         Linhares/ES</p>
+    </div>
+    <div class="footer-section">
+      <h4>Contato</h4>
+      <p class="footer-subtitle">FALE CONOSCO</p>
+      <p>📱 / 💬 <a href="https://wa.me/5527997646033" target="_blank">(27) 99764-6033</a></p>
+      <p class="footer-subtitle">E-MAIL</p>
+      <p><a href="mailto:drheltonborges@email.com">drheltonborges@email.com</a></p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Dr. Helton Borges | Todos os direitos reservados.</p>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/drheltonborges" target="_blank">📷</a>
+      <a href="https://www.facebook.com/drheltonborges" target="_blank">f</a>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/5527997646033" target="_blank" class="whatsapp-float">
+  💬
+</a>
+<script src="script.js"></script>
 </body>
 </html>
