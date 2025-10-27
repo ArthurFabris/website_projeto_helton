@@ -29,16 +29,16 @@ const testimonials = [
     name: "Hariadna Lima Prates"
   },
   {
-    text: "Meu sorriso ficou perfeito. Muito obrigada!",
-    name: "Ana Costa"
+    text: "Drº Helton foi extremamente atencioso, pontual e cuidadoso em cada etapa do atendimento. Explicou todo o procedimento com clareza, utilizou materiais adequados, além de empatia e respeito. Hoje sinto alívio, confiança e sigo com o tratamento, sabendo que estou sendo acompanhada por alguém que realmente se preocupa com o bem-estar do paciente.",
+    name: "Maria de Fátima Lima"
   },
   {
-    text: "Atendimento em casa foi muito prático e seguro.",
-    name: "Carlos Oliveira"
+    text: "Fiz implantes dentários e o resultado mudou minha autoestima. Atendimento excelente, profissionalismo e cuidado em todas as etapas. Voltei a sorrir com confiança. Obrigado Drº Helton.",
+    name: "Paulo Freitas Sousa"
   },
   {
-    text: "Melhor clínica que já fui. Voltarei com certeza!",
-    name: "Fernanda Martins"
+    text: "O Dr. Helton escolheu a profissão que ama mesmo, além de ser um excelente profissional no que faz, é atencioso, cuidadoso e o mais importante, humano. Cuida com muito zelo de seus pacientes e acompanha o tempo necessário na realização do procedimento. Agradeço a Deus por ter colocado o Dr. Helton como o profissional para cuidar da minha saúde bucal.",
+    name: "Adriana Simon"
   }
 ];
 
@@ -78,3 +78,97 @@ document.getElementById('next-testimonial').addEventListener('click', () => {
 
 // Initialize
 showTestimonial('next');
+
+
+
+
+// ==========================
+// BEFORE/AFTER SLIDER - MÚLTIPLOS SLIDERS
+// ==========================
+
+// Seleciona TODOS os sliders da página
+const allSliders = document.querySelectorAll('.before-after-slider');
+
+allSliders.forEach((sliderContainer) => {
+  const slider = sliderContainer.querySelector('.slider-control');
+  const beforeImage = sliderContainer.querySelector('.before-image');
+  const sliderButton = sliderContainer.querySelector('.slider-button');
+
+  // Verifica se todos os elementos existem
+  if (!slider || !beforeImage || !sliderButton) return;
+
+  // Função para atualizar a posição do slider
+  function updateSlider(value) {
+    // Garante que o valor está entre 0 e 100
+    value = Math.max(0, Math.min(100, value));
+    
+    // Atualiza o clip-path da imagem "antes"
+    beforeImage.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+    
+    // Atualiza a posição do botão do slider
+    sliderButton.style.left = `${value}%`;
+    
+    // Atualiza o valor do input
+    slider.value = value;
+  }
+
+  // Evento quando o usuário arrasta o slider (input range)
+  slider.addEventListener('input', (e) => {
+    updateSlider(e.target.value);
+  });
+
+  // Suporte para mouse
+  let isDragging = false;
+
+  sliderContainer.addEventListener('mousedown', () => {
+    isDragging = true;
+  });
+
+  document.addEventListener('mouseup', () => {
+    isDragging = false;
+  });
+
+  sliderContainer.addEventListener('mouseleave', () => {
+    isDragging = false;
+  });
+
+  sliderContainer.addEventListener('mousemove', (e) => {
+    if (isDragging) {
+      const rect = sliderContainer.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const percentage = (x / rect.width) * 100;
+      updateSlider(percentage);
+    }
+  });
+
+  // Suporte para touch em mobile
+  sliderContainer.addEventListener('touchstart', () => {
+    isDragging = true;
+  });
+
+  document.addEventListener('touchend', () => {
+    isDragging = false;
+  });
+
+  sliderContainer.addEventListener('touchmove', (e) => {
+    if (isDragging) {
+      const rect = sliderContainer.getBoundingClientRect();
+      const touch = e.touches[0];
+      const x = touch.clientX - rect.left;
+      const percentage = (x / rect.width) * 100;
+      updateSlider(percentage);
+      e.preventDefault(); // Previne scroll enquanto arrasta
+    }
+  });
+
+  // Clique direto na imagem também move o slider
+  sliderContainer.addEventListener('click', (e) => {
+    // Ignora se o clique foi no input range
+    if (e.target === slider) return;
+    
+    const rect = sliderContainer.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const percentage = (x / rect.width) * 100;
+    updateSlider(percentage);
+  });
+});
