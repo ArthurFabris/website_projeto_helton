@@ -18,7 +18,6 @@
     <a href="index.html">Início</a> / Serviços
   </nav>
 
-<!-- Home Care Section -->
 <section class="why-care-section">
   <div class="why-care-content">
     <div class="why-care-text">
@@ -41,7 +40,6 @@
   </div>
 </section>
 
-  <!-- Benefits Section -->
   <section class="benefits-section">
     <div class="benefits-content">
       <div class="benefits-image">
@@ -62,7 +60,6 @@
     </div>
   </section>
 
-  <!-- DSD Section -->
   <section class="dsd-section">
     <div class="dsd-content">
       <h2>Diagnóstico Digital do Sorriso (DSD)</h2>
@@ -85,7 +82,6 @@
     </div>
   </section>
 
-  <!-- Services Section -->
   <div class="container">
     <div class="services-title">
       <h2>Conheça Nossos Tratamentos</h2>
@@ -93,7 +89,6 @@
     </div>
 
     <div class="services-grid">
-      <!-- Serviço 1: DSD -->
       <div class="service-card" id="dsd-section">
         <div class="service-image-wrapper">
           <img src="imagens/dsd.jpg" alt="Diagnóstico Digital do Sorriso" class="service-image">
@@ -108,11 +103,10 @@
             <li>Comunicação clara entre dentista e paciente</li>
             <li>Redução do tempo de tratamento</li>
           </ul>
-          <a href="#" class="service-btn" onclick="openModal('dsd')">Saiba Mais</a>
+          <a href="#dsd-section" class="service-btn" onclick="openModal('dsd')">Saiba Mais</a>
         </div>
       </div>
 
-      <!-- Serviço 2: Reabilitação -->
       <div class="service-card" id="reabilitacao">
         <div class="service-image-wrapper">
           <img src="imagens/reparacao.jpeg" alt="Reabilitação Oral" class="service-image">
@@ -127,11 +121,10 @@
             <li>Restaurações com materiais de alta qualidade</li>
             <li>Recuperação da autoestima e bem-estar</li>
           </ul>
-          <a href="#" class="service-btn" onclick="openModal('reabilitacao')">Saiba Mais</a>
+          <a href="#reabilitacao" class="service-btn" onclick="openModal('reabilitacao')">Saiba Mais</a>
         </div>
       </div>
 
-      <!-- Serviço 3: Gengiva -->
       <div class="service-card" id="gengiva">
         <div class="service-image-wrapper">
           <img src="imagens/gengiva.jpg" alt="Tratamento da Gengiva" class="service-image">
@@ -146,11 +139,10 @@
             <li>Tratamento de mau hálito persistente</li>
             <li>Técnicas modernas e minimamente invasivas</li>
           </ul>
-          <a href="#" class="service-btn" onclick="openModal('gengiva')">Saiba Mais</a>
+          <a href="#gengiva" class="service-btn" onclick="openModal('gengiva')">Saiba Mais</a>
         </div>
       </div>
 
-      <!-- Serviço 4: Próteses -->
       <div class="service-card" id="proteses">
         <div class="service-image-wrapper">
           <img src="imagens/protese.webp" alt="Próteses" class="service-image">
@@ -165,11 +157,10 @@
             <li>Conforto e segurança na mastigação</li>
             <li>Durabilidade e resultados estéticos impressionantes</li>
           </ul>
-          <a href="#" class="service-btn" onclick="openModal('proteses')">Saiba Mais</a>
+          <a href="#proteses" class="service-btn" onclick="openModal('proteses')">Saiba Mais</a>
         </div>
       </div>
 
-      <!-- Serviço 5: Infantil -->
       <div class="service-card" id="infantil">
         <div class="service-image-wrapper">
           <img src="imagens/crianca.jpeg" alt="Atendimento Infantil" class="service-image">
@@ -184,11 +175,10 @@
             <li>Tratamento de cáries sem traumas</li>
             <li>Criação de experiências positivas</li>
           </ul>
-          <a href="#" class="service-btn" onclick="openModal('infantil')">Saiba Mais</a>
+          <a href="#infantil" class="service-btn" onclick="openModal('infantil')">Saiba Mais</a>
         </div>
       </div>
 
-      <!-- Serviço 6: Endodontia -->
       <div class="service-card" id="endodontia">
         <div class="service-image-wrapper">
           <img src="imagens/Atendimento domiciliar.jpg" alt="Tratamento de Canal" class="service-image">
@@ -203,11 +193,10 @@
             <li>Anestesia eficaz sem dor</li>
             <li>Preservação do dente natural</li>
           </ul>
-          <a href="#" class="service-btn" onclick="openModal('endodontia')">Saiba Mais</a>
+          <a href="#endodontia" class="service-btn" onclick="openModal('endodontia')">Saiba Mais</a>
         </div>
       </div>
 
-      <!-- Serviço 7: Lentes -->
       <div class="service-card" id="lentes">
         <div class="service-image-wrapper">
           <img src="imagens/lentes.jpg" alt="Lentes de Porcelana" class="service-image">
@@ -222,11 +211,10 @@
             <li>Resultados naturais e duradouros</li>
             <li>Transformação imediata do sorriso</li>
           </ul>
-          <a href="#" class="service-btn" onclick="openModal('lentes')">Saiba Mais</a>
+          <a href="#lentes" class="service-btn" onclick="openModal('lentes')">Saiba Mais</a>
         </div>
       </div>
 
-      <!-- Serviço 8: Ortodontia -->
       <div class="service-card" id="ortodontia">
         <div class="service-image-wrapper">
           <img src="imagens/invisalign.jpg" alt="Ortodontia Invisível" class="service-image">
@@ -241,7 +229,27 @@
             <li>Planejamento digital 3D do tratamento</li>
             <li>Resultados previsíveis e eficazes</li>
           </ul>
-          <a href="#" class="service-btn" onclick="openModal('ortodontia')">Saiba Mais</a>
+          <a href="#ortodontia" class="service-btn" onclick="openModal('ortodontia')">Saiba Mais</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="serviceModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modalTitle"></h2>
+        <span class="close" onclick="closeModal()">&times;</span>
+      </div>
+      <div class="modal-body">
+        <img id="modalImage" src="" alt="Imagem do Serviço" class="modal-image">
+        <p id="modalDescription"></p>
+        <h3 id="modalSubtitle"></h3>
+        <ul id="modalList"></ul>
+        <div class="cta-section">
+          <h3>Pronto para transformar seu sorriso?</h3>
+          <p>Agende sua consulta e dê o primeiro passo para um sorriso mais saudável e confiante.</p>
+          <a href="https://wa.me/5527997646033" target="_blank" class="cta-btn">Agendar via WhatsApp</a>
         </div>
       </div>
     </div>
@@ -279,3 +287,8 @@
       </div>
     </div>
   </footer>
+
+<script src="script_servicos.js" defer></script>
+
+</body>
+</html>
