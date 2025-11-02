@@ -87,7 +87,7 @@ header p {
 }
 
 .why-care-text h2 {
-  color: #5a2d41;
+  color: #0077B6;
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
@@ -172,10 +172,16 @@ header p {
 }
 
 .benefits-text h2 {
-  color: #5a2d41;
+  color: #0077B6;
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
+.instagram-media {
+  display: block !important;
+  margin: 0 auto !important;
+  ;
+}
+
 
 .benefits-subtitle {
   color: var(--color-primary);
@@ -317,7 +323,7 @@ header p {
 }
 
 .service-content h3 {
-  color: #5a2d41;
+  color: #0077B6;
   font-size: 2rem;
   margin-bottom: 1.5rem;
   line-height: 1.2;
